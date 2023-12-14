@@ -27,7 +27,7 @@ public class Calculadora {
             if (jerarquia( car) > 0) {
                 double op1 = pila.pop();
                 double op2 = pila.pop();
-                double aux = operacion(op1, op2, car);
+                double aux = operacion(op1, op2, car );
                 pila.push(aux);
             }else {
                 pila.push(Double.valueOf(car));
