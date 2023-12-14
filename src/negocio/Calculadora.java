@@ -36,19 +36,59 @@ public class Calculadora {
         this.resultado = pila.pop();
         return resultado;
     }
-
+    
+    private double operacion(double op1, double op2, String operador) {
+        double result = 0.0;
+        switch (operador) {
+            case "+" -> result = op1 + op2;
+            case "-" -> result = op1 - op2;
+            case "x" -> result = op1 * op2;
+            case "/" -> result = op1 / op2;
+        }
+        return result;
+    }
+    
     private String conversionPostFija() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        String postfija = "";
+        char []cadena = this.expInfija.toCharArray();
+        for (int i = 0; i < cadena.length; i++) {
+            char car = cadena[i];
+            if (jerarquia(String.valueOf(car)) > 0) {
+                while (!pilaOperaciones.vacia() && jerarquia(String.valueOf(pilaOperaciones.peek())) 
+                        >= jerarquia(String.valueOf(car))) {                    
+                    postfija += " " + pilaOperaciones.pop();
+                }
+                pilaOperaciones.push(car);
+            }else if (car == ')') {
+                char aux = pilaOperaciones.pop();
+                while (aux != '(') {                    
+                    postfija += " " + aux;
+                    aux = pilaOperaciones.pop();
+                }
+            }else if (car == '(') {
+                pilaOperaciones.push(car);
+            }else if (Character.isDigit(cadena[i])) {
+                postfija += " " + car;
+                i++;
+                while (i < cadena.length) {                    
+                    if (Character.isDigit(cadena[i])) {
+                        postfija += cadena[i]; 
+                    }else {
+                        i--;
+                        break;
+                    }
+                    i++;
+                }
+            }
+        }
+        while (!pilaOperaciones.vacia()) {            
+            postfija += " " + pilaOperaciones.pop();
+        }
+        return postfija.trim();
     }
 
     private int jerarquia(String car) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-
-    private double operacion(double op1, double op2, String car) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
-    
-    
+   
 }
