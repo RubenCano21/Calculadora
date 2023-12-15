@@ -28,7 +28,7 @@ public class PilaLista<T> implements Serializable{
         cant++;
     }
     
-    public T pop(){
+    public T pop(){        
         T x = cima.getDato();
         cima = cima.getEnlace();
         cant--;
