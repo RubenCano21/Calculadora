@@ -8,10 +8,12 @@ public class Postfijo {
 
     PilaLista pilaSalida;
     PilaLista pilaOperadores;
+    PilaLista pilaevalua;
 
     public Postfijo() {
         pilaSalida = new PilaLista();        //numeros de salida
         pilaOperadores = new PilaLista();
+        pilaevalua=new PilaLista();
     }
 
     public int Jerarquia(String signo) {
@@ -73,7 +75,7 @@ public class Postfijo {
     }
     
     public void evaluar(PilaLista infija){
-        PilaLista pilaevalua=new PilaLista();
+        pilaevalua=new PilaLista();
         pilaevalua.cima=infija.cima;
         String aux="";
         double resultado=0;
@@ -130,8 +132,8 @@ public class Postfijo {
     
     
 
-    public String getPilaSalida() {
-        return pilaSalida.toString();
+    public String getPilaEvalua() {
+        return pilaevalua.peek().toString();
     }
 
     public static void main(String[] args) {
@@ -141,6 +143,7 @@ public class Postfijo {
         //System.out.println(a.getPilaSalida());
         System.out.println("");
         
+        System.out.println(a.getPilaEvalua());
         //Postfijo b=new Postfijo();
         //b.Invertir(a);
         
