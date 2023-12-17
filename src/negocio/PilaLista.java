@@ -41,7 +41,9 @@ public class PilaLista<T> implements Serializable{
     
     public int size(){ // tamaño 
         return cant;
-    }
+    }  
+    
+    
     
     @Override
     public String toString(){
@@ -53,6 +55,7 @@ public class PilaLista<T> implements Serializable{
         } 
         return s;
     }
+    
     
     public static void main(String[] args) {
         
