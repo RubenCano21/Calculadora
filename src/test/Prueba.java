@@ -14,9 +14,9 @@ public class Prueba {
     
     public static void main(String[] args) {
         
-        String expresion = "5+((1+2)×4)-3";
+        String expresion = "5+((1+2)×4)";
         Calculadora A = new Calculadora(expresion);
-        
+        System.out.println(A.verificarExpresionValida());
         A.resolucion();
         
         System.out.println(A);

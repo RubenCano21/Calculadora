@@ -18,7 +18,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,6,0,0,1,123"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,114,0,0,1,126"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
@@ -33,74 +33,81 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="380" height="520"/>
+          <AbsoluteConstraints x="0" y="0" width="380" height="630"/>
         </Constraint>
       </Constraints>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="pnlMostrar" min="-2" pref="371" max="-2" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="btnNum_0" min="-2" pref="63" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnPunto" min="-2" pref="63" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnIgual" min="-2" pref="129" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnBorrar" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="btnHistorial" min="-2" pref="63" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="bntParentesisApertura" min="-2" pref="63" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="btnParentesisCierre" min="-2" pref="63" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="btnLimpiar" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="btnNum_7" min="-2" pref="63" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnNum_8" min="-2" pref="63" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnNum_9" min="-2" pref="63" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnDivision" min="-2" pref="63" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnMultiplicar" min="-2" pref="63" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="jComboBox1" max="32767" attributes="0"/>
+                      <Component id="pnlMostrar" alignment="1" pref="371" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="btnNum_1" min="-2" pref="63" max="-2" attributes="0"/>
+                                          <Component id="btnNum_0" min="-2" pref="63" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btnNum_2" min="-2" pref="63" max="-2" attributes="0"/>
+                                          <Component id="btnPunto" min="-2" pref="63" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btnNum_3" min="-2" pref="63" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btnRestar" min="-2" pref="63" max="-2" attributes="0"/>
+                                          <Component id="btnIgual" min="-2" pref="129" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="btnNum_4" min="-2" pref="63" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="btnNum_5" min="-2" pref="63" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="btnNum_1" min="-2" pref="63" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="btnNum_2" min="-2" pref="63" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="btnNum_8" alignment="1" min="-2" pref="63" max="-2" attributes="0"/>
+                                          </Group>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btnNum_5" min="-2" pref="63" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btnNum_6" min="-2" pref="63" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btnExp" min="-2" pref="63" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="btnNum_3" min="-2" pref="63" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="btnRestar" min="-2" pref="63" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="btnNum_6" min="-2" pref="63" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="btnExp" min="-2" pref="63" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="btnNum_9" min="-2" pref="63" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="btnDivision" min="-2" pref="63" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnSumar" min="-2" pref="63" max="-2" attributes="0"/>
                               </Group>
+                              <Component id="btnNum_4" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                              <Component id="btnNum_7" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnMultiplicar" min="-2" pref="63" max="-2" attributes="0"/>
+                              <Component id="btnBorrar" alignment="0" min="-2" pref="66" max="-2" attributes="0"/>
+                              <Component id="btnSumar" min="-2" pref="63" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="btnHistorial" min="-2" pref="63" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="bntParentesisApertura" min="-2" pref="63" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="btnParentesisCierre" min="-2" pref="63" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="btnLimpiar" min="-2" pref="96" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -112,14 +119,16 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                   <Component id="pnlMostrar" min="-2" pref="92" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="75" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnLimpiar" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
-                      <Component id="btnParentesisCierre" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
-                      <Component id="bntParentesisApertura" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
                       <Component id="btnHistorial" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
+                      <Component id="bntParentesisApertura" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
+                      <Component id="btnParentesisCierre" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
+                      <Component id="btnLimpiar" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnNum_7" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
                       <Component id="btnNum_8" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
@@ -128,34 +137,32 @@
                       <Component id="btnMultiplicar" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="btnNum_5" alignment="1" min="-2" pref="63" max="-2" attributes="0"/>
-                              <Component id="btnNum_6" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
                               <Component id="btnNum_4" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
+                              <Component id="btnNum_5" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
+                              <Component id="btnNum_6" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
                               <Component id="btnExp" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="btnNum_3" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
-                              <Component id="btnNum_2" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
                               <Component id="btnNum_1" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
+                              <Component id="btnNum_2" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
+                              <Component id="btnNum_3" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
                               <Component id="btnRestar" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="btnSumar" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnSumar" alignment="1" min="-2" pref="138" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btnNum_0" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
-                          <Component id="btnPunto" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
-                          <Component id="btnIgual" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="btnBorrar" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnNum_0" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
+                      <Component id="btnPunto" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
+                      <Component id="btnIgual" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
+                      <Component id="btnBorrar" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="22" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -226,10 +233,10 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="H"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHistorialActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnNum_7">
           <Properties>
@@ -237,9 +244,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="7"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNum_7ActionPerformed"/>
@@ -251,9 +255,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="4"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNum_4ActionPerformed"/>
@@ -265,9 +266,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="1"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNum_1ActionPerformed"/>
@@ -279,9 +277,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="2"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNum_2ActionPerformed"/>
@@ -293,9 +288,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="5"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNum_5ActionPerformed"/>
@@ -307,9 +299,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="8"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNum_8ActionPerformed"/>
@@ -324,9 +313,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="("/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntParentesisAperturaActionPerformed"/>
@@ -338,9 +324,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="3"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNum_3ActionPerformed"/>
@@ -352,9 +335,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="6"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNum_6ActionPerformed"/>
@@ -366,9 +346,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="9"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNum_9ActionPerformed"/>
@@ -383,9 +360,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value=")"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnParentesisCierreActionPerformed"/>
@@ -397,9 +371,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="0"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNum_0ActionPerformed"/>
@@ -414,9 +385,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="AC"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLimpiarActionPerformed"/>
@@ -428,10 +396,10 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="."/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPuntoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnIgual">
           <Properties>
@@ -442,9 +410,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="="/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnIgualActionPerformed"/>
@@ -459,9 +424,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="/"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDivisionActionPerformed"/>
@@ -476,9 +438,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="*"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMultiplicarActionPerformed"/>
@@ -493,9 +452,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="-"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestarActionPerformed"/>
@@ -515,9 +471,6 @@
                 <EmptyBorder/>
               </Border>
             </Property>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumarActionPerformed"/>
@@ -532,9 +485,6 @@
               <Font name="Dialog" size="28" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="^"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExpActionPerformed"/>
@@ -549,13 +499,26 @@
               <Font name="Dialog" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="DEL"/>
-            <Property name="model" type="javax.swing.ButtonModel" editor="org.netbeans.modules.form.ComponentChooserEditor">
-              <ComponentRef name="default"/>
-            </Property>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBorrarActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="jComboBox1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="1"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="0"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox1ActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>

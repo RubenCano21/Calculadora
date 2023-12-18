@@ -89,6 +89,9 @@ public class Calculadora {
 
     private int jerarquia(String operador) {
         int jerarquia = 0;
+        if (operador.equals("^")) {
+             jerarquia = 3;
+        }
         if (operador.equals("×") || operador.equals("/")) {
              jerarquia = 2;
         } 
