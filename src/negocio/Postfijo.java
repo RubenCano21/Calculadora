@@ -125,7 +125,7 @@ public class Postfijo {
     public double EvaluaExpresion(String valor,double valor1,double valor2) {
         double resultado=0;
         if("^".equals(valor)){
-            resultado=(int) Math.pow(valor2, valor1);
+            resultado=(double) Math.pow(valor2, valor1);
         }else if("*".equals(valor)){
             resultado=valor1*valor2;
         }else if("/".equals(valor)){
