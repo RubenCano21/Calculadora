@@ -9,7 +9,7 @@ package negocio;
  * @author Cano
  */
 class Validacion {
-     String expresion;
+      String expresion;
     
     public Validacion(String expresion) {
         this.expresion = expresion;
@@ -102,4 +102,5 @@ class Validacion {
         }
         return true;
     }
+    
 }

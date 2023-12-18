@@ -24,7 +24,7 @@ public class Postfijo {
         if ("*".equals(signo) || "/".equals(signo)) {
             return 2;
         }
-        if ("^".equals(signo)) {
+        if ("^".equals(signo) || "%".equals(signo)) {
             return 3;
         }
         return 0; 
@@ -126,18 +126,45 @@ public class Postfijo {
     public double EvaluaExpresion(String valor,double valor1,double valor2) {
         double resultado=0;
         if("^".equals(valor)){
-            resultado=(double) Math.pow(valor2, valor1);
+            resultado=exponente(valor2, valor1); //(double) Math.pow(valor2, valor1);
         }else if("*".equals(valor)){
-            resultado=valor1*valor2;
+            resultado= multiplicacion(valor1, valor2);          //valor1*valor2;
         }else if("/".equals(valor)){
-            resultado=valor2/valor1;
+            resultado=division(valor1, valor2);
         }else if("+".equals(valor)){
-            resultado=valor1+valor2;
+            resultado=suma(valor1, valor2);
         }else if("-".equals(valor)){
-            resultado=valor2-valor1;
+            resultado=resta(valor1, valor2);
         }
         return resultado;
     }
+    
+    public double suma(double valor1, double valor2){
+        return (valor1 + valor2);
+    }
+    
+    public double resta(double valor1, double valor2){
+        return (valor1 - valor2);
+    }
+    public double multiplicacion(double valor1, double valor2){
+        return (valor1 * valor2);
+    }
+    public double division(double valor1, double valor2){
+        if (valor2 == 0) {
+            throw new ArithmeticException("Division por cero no permitida");
+        }
+        return (valor1 / valor2);
+    }
+    
+    
+    public double exponente(double valor1, double valor2){
+        return Math.pow(valor1, valor2);
+    }
+    
+    /*public double porcentaje(double valor1, double valor2){
+        return (valor1 / valor2)*100;
+    }*/
+    
     
     
     //invierte la pila para evaluarla 
@@ -164,8 +191,8 @@ public class Postfijo {
 
     public static void main(String[] args) {
         Postfijo a = new Postfijo();
-        //String expresion = "((5.2+3.1)*2)-(4^2+1)";
-        String expresion = "(3.5+2.2)-1.8/((5.2+3.1)*2)-(4^2+1)";
+        String expresion = "7003+78";
+        //String expresion = "(3.5+2.2)-1.8/((5.2+3.1)*2)-(4^2+1)";
         a.InfijaPostija(expresion);
         //System.out.println(a.getPilaSalida());
         System.out.println("");
