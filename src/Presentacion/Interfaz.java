@@ -4,7 +4,7 @@
  */
 package Presentacion;
 
-import javax.swing.JTextField;
+
 import javax.swing.SwingConstants;
 import negocio.PilaLista;
 import negocio.Postfijo;
@@ -500,7 +500,7 @@ public class Interfaz extends javax.swing.JFrame {
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         Postfijo op=new Postfijo();
         op.InfijaPostija(jTextField1.getText());
-        jTextField2.setText(op.getPilaEvalua());
+        jTextField2.setText(op.getResultado());
         jComboBox1.addItem(jTextField1.getText());        
     }//GEN-LAST:event_jButton10ActionPerformed
 
@@ -513,7 +513,7 @@ public class Interfaz extends javax.swing.JFrame {
         jTextField2.setText("");
         Postfijo op=new Postfijo();
         op.InfijaPostija(jTextField1.getText());
-        jTextField2.setText(op.getPilaEvalua());
+        jTextField2.setText(op.getResultado());
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed

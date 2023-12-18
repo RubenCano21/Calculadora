@@ -11,12 +11,13 @@ public class Postfijo {
     PilaLista pilaevalua;
 
     public Postfijo() {
-        pilaSalida = new PilaLista();        //numeros de salida
-        pilaOperadores = new PilaLista();
-        pilaevalua=new PilaLista();
+        pilaSalida = new PilaLista();        //donde va almacenar posfijo
+        pilaOperadores = new PilaLista();   //donde almacena los signos y ( ), una pila auxiliar
+        pilaevalua=new PilaLista();         //pila que contiene la pila posfija y el resultado
     }
 
-    public int Jerarquia(String signo) {
+    //funcion que retorrna su la jerarquia a la que pertenece
+    public int Jerarquia(String signo) {    
         if ("+".equals(signo) || "-".equals(signo)) {
             return 1;
         }
@@ -26,20 +27,20 @@ public class Postfijo {
         if ("^".equals(signo)) {
             return 3;
         }
-        return 0;
+        return 0; 
     }
 
+    
+    //le pasamos lo que queremos calcular y lo convierte de infija a posfija
     public void InfijaPostija(String expresion) {
         pilaSalida = new PilaLista();        //numeros de salida
         pilaOperadores = new PilaLista();       //()+-*/
         String aux = "";
-        String num="";  
-        int u;
-        u=expresion.length();
+        String num="";          
 
         for (int i = 0; i < expresion.length(); i++) {
             char caracter = expresion.charAt(i);
-            aux = Character.toString(caracter); 
+            aux = Character.toString(caracter);            
             
             
             if (aux.matches("[a-zA-Z0-9]+") || aux.equals(".")) {
@@ -49,16 +50,20 @@ public class Postfijo {
                 num="";
             }
             if(i==expresion.length()-1 && !num.equals("")){
-                pilaSalida.push(num);
+                pilaSalida.push(num);   //mete num si en la siguiente vuelta hay un ")" y es el final del String
             }
-            if (caracter == '(') { //(2-(2+5)*4)               
-                pilaOperadores.push(caracter);                  
-            } else if (caracter == ')') {
-                while (!pilaOperadores.vacia() ) {                    
+            
+            
+            
+            if (caracter == '(') {             
+                pilaOperadores.push(caracter);    
+                
+            } else if (caracter == ')'){
+                while (!pilaOperadores.vacia() ) {  //hace un bucle por la pilaOperador hasta encontrarse con un parentesis abierto                 
                     if ((!"(".equals(pilaOperadores.peek().toString()))) {
                         pilaSalida.push(pilaOperadores.pop().toString());
                     } else {
-                        pilaOperadores.pop();
+                        pilaOperadores.pop();   //si se encunetra con un parentesis abierto lo elimina y rompe el ciclo
                         break;
                     }
                 }
@@ -76,24 +81,28 @@ public class Postfijo {
             
         }
         //==========================================================================
-          
+        
+        //por si quedo algun signo no leido
         while (!pilaOperadores.vacia()) {
             pilaSalida.push(pilaOperadores.pop());
         }
         pilaOperadores = null;
         //System.out.println(pilaSalida.toString());
         
+        
         Invertir(pilaSalida);
         System.out.println(pilaSalida.toString());
         evaluar(pilaSalida);
     }
     
+    
+    
+    //le pasamos una pila posfija ya invertida para calcular el resultado
     public void evaluar(PilaLista infija){
         pilaevalua=new PilaLista();
-        pilaevalua.cima=infija.cima;
+        pilaevalua.cima=infija.cima;    //copia a infija osea toma todos sus valores
         String aux="";
-        double resultado=0;
-        
+        double resultado=0;       
         
         while (!infija.vacia()) {
             aux=infija.pop().toString();
@@ -103,15 +112,16 @@ public class Postfijo {
                 double valor1=Double.valueOf(pilaevalua.pop().toString());
                 double valor2=Double.valueOf(pilaevalua.pop().toString());
                 resultado=EvaluaExpresion(aux,valor1,valor2);
-                pilaevalua.push(resultado);      //para redondear los decimales            
+                pilaevalua.push(resultado);                 
             }
         }
+        // al final tiene todos los valores de infija y en la cima agrega el resultado
         System.out.println(pilaevalua.toString());
         
     }
     
     
-    
+    //toma dos valores mas signo y lo opera
     public double EvaluaExpresion(String valor,double valor1,double valor2) {
         double resultado=0;
         if("^".equals(valor)){
@@ -129,6 +139,7 @@ public class Postfijo {
     }
     
     
+    //invierte la pila para evaluarla 
     public void Invertir(PilaLista P){
         PilaLista aux=new PilaLista();
         PilaLista aux2=new PilaLista();
@@ -145,8 +156,8 @@ public class Postfijo {
     }
     
     
-
-    public String getPilaEvalua() {
+    //devuelve el resultado que esta en la cima de la pilaEvalua
+    public String getResultado() {
         return pilaevalua.peek().toString();
     }
 
@@ -158,7 +169,7 @@ public class Postfijo {
         //System.out.println(a.getPilaSalida());
         System.out.println("");
         
-        System.out.println(a.getPilaEvalua());
+        System.out.println(a.getResultado());
         //Postfijo b=new Postfijo();
         //b.Invertir(a);
         
