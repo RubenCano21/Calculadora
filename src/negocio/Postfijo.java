@@ -108,9 +108,10 @@ public class Postfijo {
             aux=infija.pop().toString();
             if (aux.matches("[a-zA-Z0-9.]+")) {
                 pilaevalua.push(aux);                  
-            } else if ("^".equals(aux) || "*".equals(aux) || "/".equals(aux) || "+".equals(aux) || "-".equals(aux)) { //(2-(2+5)*4)               
-                double valor1=Double.valueOf(pilaevalua.pop().toString());
-                double valor2=Double.valueOf(pilaevalua.pop().toString());
+            } else if ("^".equals(aux) || "*".equals(aux) || "/".equals(aux) || 
+                    "+".equals(aux) || "-".equals(aux)) { //(2-(2+5)*4)               
+                double valor1=Double.parseDouble(pilaevalua.pop().toString());
+                double valor2=Double.parseDouble(pilaevalua.pop().toString());
                 resultado=EvaluaExpresion(aux,valor1,valor2);
                 pilaevalua.push(resultado);                 
             }
