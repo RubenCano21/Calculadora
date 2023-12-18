@@ -42,7 +42,7 @@ public class Calculadora {
         switch (operador) {
             case "+" -> result = op1 + op2;
             case "-" -> result = op1 - op2;
-            case "x" -> result = op1 * op2;
+            case "*" -> result = op1 * op2;
             case "/" -> result = op1 / op2;
         }
         return result;
@@ -145,8 +145,5 @@ public class Calculadora {
                 + getExpresionPostfija() + "\nResultado = " + getResultado();
     }
     
-    public static void main(String[] args) {
-        
-    }
 
 }
