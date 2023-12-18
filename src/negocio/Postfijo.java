@@ -33,17 +33,30 @@ public class Postfijo {
         pilaSalida = new PilaLista();        //numeros de salida
         pilaOperadores = new PilaLista();       //()+-*/
         String aux = "";
+        String num="";  
+        int u;
+        u=expresion.length();
 
-        for (char caracter : expresion.toCharArray()) {
-            aux = Character.toString(caracter);            
-            if (aux.matches("[a-zA-Z0-9]+")) {
-                pilaSalida.push(caracter);                  
-            } else if (caracter == '(') { //(2-(2+5)*4)               
+        for (int i = 0; i < expresion.length(); i++) {
+            char caracter = expresion.charAt(i);
+            aux = Character.toString(caracter); 
+            
+            
+            if (aux.matches("[a-zA-Z0-9]+") || aux.equals(".")) {
+                num+=aux; 
+            }else if(!aux.matches("[a-zA-Z0-9]+") && !num.equals("")){
+                pilaSalida.push(num);
+                num="";
+            }
+            if(i==expresion.length()-1 && !num.equals("")){
+                pilaSalida.push(num);
+            }
+            if (caracter == '(') { //(2-(2+5)*4)               
                 pilaOperadores.push(caracter);                  
             } else if (caracter == ')') {
                 while (!pilaOperadores.vacia() ) {                    
                     if ((!"(".equals(pilaOperadores.peek().toString()))) {
-                        pilaSalida.push(pilaOperadores.pop());
+                        pilaSalida.push(pilaOperadores.pop().toString());
                     } else {
                         pilaOperadores.pop();
                         break;
@@ -51,7 +64,7 @@ public class Postfijo {
                 }
             } else if (caracter == '^' || caracter == '*' || caracter == '/' || caracter == '+' || caracter == '-') {
                 
-                if (!pilaOperadores.vacia()) //b=pilaOperadores.peek().toString();
+                if (!pilaOperadores.vacia()) 
                 {
                     while (!pilaOperadores.vacia()
                             && (Jerarquia(pilaOperadores.peek().toString()) >= Jerarquia(aux))) {
@@ -60,6 +73,7 @@ public class Postfijo {
                 }
                 pilaOperadores.push(caracter);
             }
+            
         }
         //==========================================================================
           
@@ -83,13 +97,13 @@ public class Postfijo {
         
         while (!infija.vacia()) {
             aux=infija.pop().toString();
-            if (aux.matches("[a-zA-Z0-9]+")) {
+            if (aux.matches("[a-zA-Z0-9.]+")) {
                 pilaevalua.push(aux);                  
             } else if ("^".equals(aux) || "*".equals(aux) || "/".equals(aux) || "+".equals(aux) || "-".equals(aux)) { //(2-(2+5)*4)               
                 double valor1=Double.valueOf(pilaevalua.pop().toString());
                 double valor2=Double.valueOf(pilaevalua.pop().toString());
                 resultado=EvaluaExpresion(aux,valor1,valor2);
-                pilaevalua.push(resultado );                  
+                pilaevalua.push(resultado);      //para redondear los decimales            
             }
         }
         System.out.println(pilaevalua.toString());
@@ -138,7 +152,8 @@ public class Postfijo {
 
     public static void main(String[] args) {
         Postfijo a = new Postfijo();
-        String expresion = "(2*3+(2/9)+1*3^5)";
+        //String expresion = "((5.2+3.1)*2)-(4^2+1)";
+        String expresion = "(3.5+2.2)-1.8/((5.2+3.1)*2)-(4^2+1)";
         a.InfijaPostija(expresion);
         //System.out.println(a.getPilaSalida());
         System.out.println("");
