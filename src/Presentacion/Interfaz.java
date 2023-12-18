@@ -24,6 +24,7 @@ public class Interfaz extends javax.swing.JFrame {
         jTextField1.setHorizontalAlignment(SwingConstants.RIGHT);
         jTextField2.setHorizontalAlignment(SwingConstants.RIGHT);
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
         jComboBox1.setVisible(false);
     }
 

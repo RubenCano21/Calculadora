@@ -395,11 +395,6 @@
                   </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton19">
-                  <Properties>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="F:\Grabaciones\gra\Fisica 3\tiempo-pasado (3).png"/>
-                    </Property>
-                  </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton19ActionPerformed"/>
                   </Events>
