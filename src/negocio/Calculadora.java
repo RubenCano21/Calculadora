@@ -87,13 +87,66 @@ public class Calculadora {
         return postfija.trim();
     }
 
-    private int jerarquia(String car) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    private int jerarquia(String operador) {
+        int jerarquia = 0;
+        if (operador.equals("×") || operador.equals("/")) {
+             jerarquia = 2;
+        } 
+        if (operador.equals("+") || operador.equals("-")) {
+            jerarquia = 1;
+        }
+        return jerarquia;
+    }
+    
+    public String getExpresionInfija() {
+        return expInfija;
+    }
+
+    public String getExpresionPostfija() {
+        return expPostFija;
+    }
+
+    public String getError() {
+        return Error;
+    }
+
+    public Double getResultado() {
+        return resultado;
+    }
+    
+    public boolean verificarExpresionValida() {
+        Validacion A = new Validacion(expInfija);
+        if (expInfija.equals("")) {
+            Error = "NO PUEDE SER VACIA LA EXPRESIÓN INFIJA";
+            return false;
+        }
+        if (!A.validarParentesis()) {
+            Error = "PARENTESIS INVALIDOS";
+            return false;
+        }
+        if (A.empiezaConOperador()) {
+            Error = "NO PUEDE EMPEZAR CON UN OPERADOR";
+            return false;
+        }
+        if (A.terminaConOperador()) {
+            Error = "NO PUEDE TERMINAR CON UN OPERADOR";
+            return false;
+        }
+        if (!A.evaluarAlternaciones()) {
+            Error = ("ORDEN DE EXPRESIÓN INCORRECTA");
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Expresión Infija = " + getExpresionInfija() + "\nExpresión Postfija = " 
+                + getExpresionPostfija() + "\nResultado = " + getResultado();
     }
     
     public static void main(String[] args) {
         
     }
-    
-   
+
 }
