@@ -367,83 +367,68 @@ public class FormCalculadora extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnNum_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_0ActionPerformed
-        lbResultado.setText("");
-        expresion = expresion + "0";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + "0");
         aux.push("0");
     }//GEN-LAST:event_btnNum_0ActionPerformed
 
     private void btnNum_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_1ActionPerformed
-        lbResultado.setText("");
-        expresion = expresion + "1";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + "1");
+        aux.push(btnNum_1.getText());
     }//GEN-LAST:event_btnNum_1ActionPerformed
 
     private void btnNum_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_2ActionPerformed
-        // TODO add your handling code here:
-        lbResultado.setText("");
-        expresion = expresion + "2";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + "2");
+        aux.push("2");
     }//GEN-LAST:event_btnNum_2ActionPerformed
 
     private void btnNum_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_3ActionPerformed
-        lbResultado.setText("");
-        expresion = expresion + "3";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + "3");
+        aux.push("3");
     }//GEN-LAST:event_btnNum_3ActionPerformed
 
     private void btnNum_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_4ActionPerformed
-        lbResultado.setText("");
-        expresion = expresion + "4";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + "4");
+        aux.push("4");
     }//GEN-LAST:event_btnNum_4ActionPerformed
 
     private void btnNum_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_5ActionPerformed
-        lbResultado.setText("");
-        expresion = expresion + "5";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + "5");
+        aux.push("5");
     }//GEN-LAST:event_btnNum_5ActionPerformed
 
     private void btnNum_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_6ActionPerformed
-        lbResultado.setText("");
-        expresion = expresion + "6";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + "6");
+        aux.push("6");
     }//GEN-LAST:event_btnNum_6ActionPerformed
 
     private void btnNum_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_7ActionPerformed
-        lbResultado.setText("");
-        expresion = expresion + "7";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + "7");
+        aux.push("7");
     }//GEN-LAST:event_btnNum_7ActionPerformed
 
     private void btnNum_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_8ActionPerformed
-        lbResultado.setText("");
-        expresion = expresion + "8";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + "8");
+        aux.push("8");
     }//GEN-LAST:event_btnNum_8ActionPerformed
 
     private void btnNum_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_9ActionPerformed
-        lbResultado.setText("");
-        expresion = expresion + "9";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + "9");
+        aux.push("9");
     }//GEN-LAST:event_btnNum_9ActionPerformed
 
     private void bntParentesisAperturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntParentesisAperturaActionPerformed
-        lbResultado.setText("");
-        expresion = expresion + "(";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + "(");
+        aux.push("(");
     }//GEN-LAST:event_bntParentesisAperturaActionPerformed
 
     private void btnParentesisCierreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnParentesisCierreActionPerformed
-        lbResultado.setText("");
-        expresion = expresion + ")";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + ")");
+        aux.push(")");
     }//GEN-LAST:event_btnParentesisCierreActionPerformed
 
     private void btnDivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisionActionPerformed
-        lbResultado.setText("");
-        expresion = expresion + "/";
-        txtMostrar.setText(expresion);
+        txtMostrar.setText(txtMostrar.getText() + "/");
+        aux.push("/");
     }//GEN-LAST:event_btnDivisionActionPerformed
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
@@ -462,6 +447,7 @@ public class FormCalculadora extends javax.swing.JFrame {
         lbResultado.setText("");
         expresion = expresion + "-";
         txtMostrar.setText(expresion);
+        
     }//GEN-LAST:event_btnRestarActionPerformed
 
     private void btnSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumarActionPerformed
