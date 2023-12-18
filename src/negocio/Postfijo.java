@@ -39,18 +39,18 @@ public class Postfijo {
         String num="";          
 
         for (int i = 0; i < expresion.length(); i++) {
-            char caracter = expresion.charAt(i);
+            char caracter = expresion.charAt(i);//toma en cada vuelta un solo caracter del string
             aux = Character.toString(caracter);            
             
             
-            if (aux.matches("[a-zA-Z0-9]+") || aux.equals(".")) {
+            if (aux.matches("[a-zA-Z0-9]+") || aux.equals(".")) {//si es numero o hay un punto decimal
                 num+=aux; 
             }else if(!aux.matches("[a-zA-Z0-9]+") && !num.equals("")){
                 pilaSalida.push(num);
                 num="";
             }
             if(i==expresion.length()-1 && !num.equals("")){
-                pilaSalida.push(num);   //mete num si en la siguiente vuelta hay un ")" y es el final del String
+                pilaSalida.push(num);   //mete num si en la siguiente vuelta hay un ")" y es el final del String y no hay mas que leer
             }
             
             
